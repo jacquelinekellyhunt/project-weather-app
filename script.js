@@ -105,6 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
             case "Thunderstorm":
                 weatherDescription.textContent = "Thunderstorms expected, stay indoors!";
                 break;
+            default:
+                    weatherDescription.textContent = "Weather condition unknown, stay prepared.";
         }
 
         updateWeeklyForecast(data.list);
@@ -138,6 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 case "Thunderstorm":
                     icon.src = "assets/design-1/storm.png";
+                default:
+                    icon.src = "assets/design-1/default-icon.png";
             }
         });
     };
